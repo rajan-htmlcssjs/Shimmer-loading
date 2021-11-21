@@ -1,5 +1,6 @@
 const imageContainer = document.querySelector('.image-container')
 const imagedescription = document.querySelector('.image-description')
+const btn = document.querySelector('.btn')
 
 function setImage(){
     imageContainer.classList.remove('loading')
@@ -17,7 +18,13 @@ function setText(){
     `
 }
 
+function setBtnFix(){
+    btn.classList.remove('loading')
+    btn.disabled = false
+}
+
 setTimeout(()=>{
     setImage()
     setText()
+    setBtnFix()
 },5000)

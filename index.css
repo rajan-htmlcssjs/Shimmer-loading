@@ -32,6 +32,7 @@ body{
     line-height: 150%;
     word-spacing: 1px;
 }
+
 .btn {
     width: 100%;
     padding: 0.4rem 2rem;
@@ -39,6 +40,10 @@ body{
     color: #fff;
     border-width: 0px;
     border-radius: 2px;
+    cursor: pointer;
+}
+.btn:disabled{
+    cursor:wait
 }
 
 .loading {
